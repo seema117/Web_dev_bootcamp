@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+    .container{
+      height: 748px;
+      width: 748px;
+      display: grid;
+      gap: 9px;
+      background-color: black;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 22px;
+
+    }
+
+
+    .red{
+      background-color: red;
+      width: 320px;
+      height: 414px;
+    }
+    .c2{
+      background-color:bisque;
+      grid-column: span 3;
+    }
+
+    .c3{
+      background-color:bisque;
+      grid-row: span 2;
+    }
+    .c4{
+      background-color:bisque;
+      grid-area: 2/2/4/4;
+    }
+    .blue {
+      background-color: #004592;
+      border-bottom: 10px solid #000;
+    }
+    .c5{
+      background-color:bisque;
+      grid-row: span 2;
+    }
+    
+    
+    .yellow{
+      background-color: yellow;
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 4;
+    }
+    .black{
+      background-color: black;
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 4; 
+    }
+    .c6{
+      background-color: powderblue;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 4; 
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="container">
+    <div class=" items red"></div>
+    <div class=" items c2"></div>
+    <div class=" items c3"></div>
+    <div class=" items c4"></div> 
+    <div class=" items blue"></div>
+    <div class=" items c5"></div>
+    <div class=" items c6"></div>
+    <div class=" items yellow"></div>
+    <div class=" items black"></div>
+  </div>
+</body>
+
+</html>
