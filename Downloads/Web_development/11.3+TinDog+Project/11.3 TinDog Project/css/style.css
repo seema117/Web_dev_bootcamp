@@ -26,3 +26,7 @@
   height: 100px;
   border-radius: 50%;
 }
+#title{
+   background-image: linear-gradient(to left,pink, #00d4ff);
+}
+
